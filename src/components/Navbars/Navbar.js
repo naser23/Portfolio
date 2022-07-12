@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import MobileNav from "./MobileNav";
 import "../../styles/navbar.css";
 
 function Navbar() {
@@ -11,13 +12,14 @@ function Navbar() {
     <>
       <nav className="Navbar">
         <div
-          className={navOpen ? "hamburgerButton" : "hamburgerButton is-active"}
+          className={!navOpen ? "hamburgerButton" : "hamburgerButton is-active"}
           onClick={onClick}
         >
           <span className="line"></span>
           <span className="line"></span>
           <span className="line"></span>
         </div>
+        {navOpen && <MobileNav />}
       </nav>
     </>
   );
