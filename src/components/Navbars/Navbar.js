@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
+import ResumeButton from "../ResumeButton";
 import { motion, AnimatePresence } from "framer-motion";
 import "../../styles/navbar.css";
 
@@ -36,7 +37,7 @@ function Navbar() {
           <div className="link">About</div>
           <div className="link">Projects</div>
           <div className="link">Contact</div>
-          <div className="link">Resume</div>
+          <ResumeButton />
         </div>
       </nav>
     </>
