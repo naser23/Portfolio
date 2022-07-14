@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
+import { motion, AnimatePresence } from "framer-motion";
 import "../../styles/navbar.css";
 
 function Navbar() {
@@ -19,7 +20,18 @@ function Navbar() {
           <span className="line"></span>
           <span className="line"></span>
         </div>
-        {navOpen && <MobileNav />}
+        <AnimatePresence>
+          {navOpen && (
+            <motion.div
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              className="motionComponent"
+            >
+              <MobileNav />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </>
   );

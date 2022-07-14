@@ -7,8 +7,9 @@
   top: 0;
   background-color: #212121;
   border: 1px solid white;
-  transform: translate(-100%, 0);
-  /* transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); */
+  /* transform: translate(-100%, 0);
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); */
+  transition: all 0.3s ease-in-out;
 }
 
 .linkArea {
@@ -32,8 +33,8 @@
   }
 }
 @media (min-width: 767.98px) {
-  .linkArea {
+  /* .linkArea {
     gap: 5rem;
     padding-top: 10rem;
-  }
+  } */
 }

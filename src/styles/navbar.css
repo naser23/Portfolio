@@ -19,6 +19,13 @@
   z-index: 5;
 }
 
+.motionComponent {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
 .line {
   width: 2.25em;
   height: 5px;
@@ -44,6 +51,9 @@
   }
 }
 @media (min-width: 767.98px) {
+  .hamburgerButton {
+    display: none;
+  }
 }
 @media (min-width: 991.98px) {
   .Navbar {
@@ -55,4 +65,11 @@
   }
 }
 @media (min-width: 1199.98px) {
+}
+
+/* // keeping hamburgerButton on larger landscape phone screens // */
+@media (max-width: 991.98px) and (orientation: landscape) {
+  .hamburgerButton {
+    display: flex;
+  }
 }
