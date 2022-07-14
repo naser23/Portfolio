@@ -34,6 +34,22 @@
   transition: all 0.2s ease-in-out;
 }
 
+.navLinks {
+  display: none;
+}
+
+.link {
+  font-size: 1.3rem;
+  /* color: #075a89; */
+  /* color: #212121; */
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #212121;
+  transition: color 0.1s ease-in-out;
+}
+
 /* // hamburger menu open animation // */
 .is-active .line:nth-child(2) {
   opacity: 0;
@@ -54,6 +70,17 @@
   .hamburgerButton {
     display: none;
   }
+
+  .Navbar {
+    justify-content: end;
+  }
+
+  .navLinks {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding-right: 2.5rem;
+  }
 }
 @media (min-width: 991.98px) {
   .Navbar {
@@ -63,13 +90,29 @@
   .hamburgerButton {
     display: none;
   }
+
+  .navLinks {
+    width: 40%;
+    padding-right: 5rem;
+  }
 }
 @media (min-width: 1199.98px) {
+  .navLinks {
+    width: 35%;
+  }
 }
 
 /* // keeping hamburgerButton on larger landscape phone screens // */
 @media (max-width: 991.98px) and (orientation: landscape) {
   .hamburgerButton {
     display: flex;
+  }
+
+  .Navbar {
+    justify-content: start;
+  }
+
+  .navLinks {
+    display: none;
   }
 }
