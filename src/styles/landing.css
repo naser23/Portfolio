@@ -1,0 +1,18 @@
+.landingPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.nameHeader {
+  font-size: 3rem;
+  /* line-height: 3.5rem; */
+}
+
+.landingSubHeader {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
