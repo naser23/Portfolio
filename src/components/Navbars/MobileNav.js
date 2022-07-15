@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeButton from "../ResumeButton";
 import "../../styles/mobilenav.css";
 
 function MobileNav() {
@@ -8,7 +9,7 @@ function MobileNav() {
         <div className="mobileLink">About</div>
         <div className="mobileLink">Projects</div>
         <div className="mobileLink">Contact</div>
-        <div className="mobileLink">Resume</div>
+        <button className="resumeButtonMobile">Resume</button>
       </div>
     </nav>
   );

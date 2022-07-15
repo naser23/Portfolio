@@ -93,13 +93,13 @@
   }
 
   .navLinks {
-    width: 40%;
+    width: 45%;
     padding-right: 5rem;
   }
 }
 @media (min-width: 1199.98px) {
   .navLinks {
-    width: 35%;
+    width: 30%;
   }
 }
 

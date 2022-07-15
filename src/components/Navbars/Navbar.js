@@ -26,6 +26,7 @@ function Navbar() {
             <motion.div
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
+              transition={{ ease: "easeInOut", duration: 0.2 }}
               exit={{ x: "-100%" }}
               className="motionComponent"
             >
