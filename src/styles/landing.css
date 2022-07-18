@@ -14,5 +14,31 @@
 
 .landingSubHeader {
   font-size: 1.5rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 567.98px) {
+  .landingPageContent {
+    padding: 0 5rem;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .landingPageContent {
+    padding: 0 10rem;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .landingPageContent {
+    width: 80%;
+    /* padding: 0 30%; */
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .landingParagraph {
+    width: 40%;
+  }
 }
