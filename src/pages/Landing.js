@@ -1,16 +1,10 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "../styles/landing.css";
 
 function Landing() {
   return (
     <section className="landingPage">
-      <motion.div
-        className="landingPageContent"
-        initial={{ opacity: 0.5 }}
-        animate={{ opactiy: 1 }}
-        transition={{ duration: 0.2 }}
-      >
+      <div className="landingPageContent">
         <h1 className="nameHeader">
           Naser <br /> Abdulkadir
         </h1>
@@ -20,7 +14,8 @@ function Landing() {
           have a passion for web development and I'm looking to show my skills
           and learn as much as I can. Click below to learn more about me!
         </p>
-      </motion.div>
+        <button className="aboutButton">About</button>
+      </div>
     </section>
   );
 }

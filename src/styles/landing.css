@@ -17,6 +17,23 @@
   padding-bottom: 1rem;
 }
 
+.aboutButton {
+  font-size: 1.25rem;
+  padding: 0.5rem 3rem;
+  margin-top: 1rem;
+  background-color: #075a89;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+.aboutButton:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #212121;
+}
+
 @media (min-width: 567.98px) {
   .landingPageContent {
     padding: 0 5rem;

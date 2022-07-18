@@ -3,11 +3,11 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  position: absolute;
   top: 0;
   background-color: #212121;
   border: 1px solid white;
   transition: all 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .linkArea {
