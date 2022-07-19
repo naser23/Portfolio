@@ -1,8 +1,9 @@
 import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import MobileNav from "./MobileNav";
 import ResumeButton from "../ResumeButton";
-import { motion, AnimatePresence } from "framer-motion";
 import "../../styles/navbar.css";
 
 function Navbar() {
@@ -10,6 +11,7 @@ function Navbar() {
   function onClick() {
     setNavOpen(!navOpen);
   }
+
   return (
     <>
       <nav className="Navbar">
@@ -30,14 +32,31 @@ function Navbar() {
               exit={{ x: "-100%" }}
               className="motionComponent"
             >
-              <MobileNav />
+              <MobileNav onClick={onClick} />
             </motion.div>
           )}
         </AnimatePresence>
         <div className="navLinks">
-          <div className="link">About</div>
-          <div className="link">Projects</div>
-          <div className="link">Contact</div>
+          <Link className="link" to="/">
+            About
+          </Link>
+          <Link className="link" to="/projects">
+            Projects
+          </Link>
+          <Link className="link" to="/contact">
+            Contact
+          </Link>
+
+          {/* <NavLink to="/" className="link">
+            About
+          </NavLink>
+          <NavLink to="/projects" className="link">
+            Projects
+          </NavLink>
+          <NavLink to="/contact" className="link">
+            Contact
+          </NavLink> */}
+
           <ResumeButton />
         </div>
       </nav>

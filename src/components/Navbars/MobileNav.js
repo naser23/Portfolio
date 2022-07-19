@@ -1,14 +1,21 @@
+import { Link } from "react-router-dom";
 import React from "react";
-import ResumeButton from "../ResumeButton";
+
 import "../../styles/mobilenav.css";
 
-function MobileNav() {
+function MobileNav({ onClick }) {
   return (
     <nav className="mobileNav">
       <div className="linkArea">
-        <div className="mobileLink">About</div>
-        <div className="mobileLink">Projects</div>
-        <div className="mobileLink">Contact</div>
+        <Link to="/" className="mobileLink" onClick={onClick}>
+          About
+        </Link>
+        <Link to="/projects" className="mobileLink" onClick={onClick}>
+          Projects
+        </Link>
+        <Link to="/contact" className="mobileLink" onClick={onClick}>
+          Contact
+        </Link>
         <button className="resumeButtonMobile">Resume</button>
       </div>
     </nav>

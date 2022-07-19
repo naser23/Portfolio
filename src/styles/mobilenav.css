@@ -22,6 +22,8 @@
 
 .mobileLink {
   font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
   /* color: #075a89; */
   /* color: #212121; */
 }
