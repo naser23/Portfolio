@@ -1,6 +1,6 @@
 .landingPage {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   padding-bottom: 1rem;
 }
 
-.aboutButton {
+.projectsButton {
   font-size: 1.25rem;
   padding: 0.5rem 3rem;
   margin-top: 1rem;
@@ -28,7 +28,7 @@
   transition: all 0.1s ease-in-out;
 }
 
-.aboutButton:hover {
+.projectsButton:hover {
   cursor: pointer;
   background-color: white;
   color: #212121;
@@ -42,20 +42,31 @@
 }
 
 @media (min-width: 767.98px) {
-  .landingPageContent {
-    padding: 0 10rem;
+  .nameHeader {
+    font-size: 3.25rem;
+  }
+
+  .landingSubHeader {
+    font-size: 2rem;
+  }
+
+  .landingParagraph {
+    font-size: 1.25rem;
   }
 }
 
 @media (min-width: 991.98px) {
   .landingPageContent {
-    width: 80%;
-    /* padding: 0 30%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
 @media (min-width: 1199.98px) {
   .landingParagraph {
-    width: 40%;
+    padding: 0 25rem;
+    /* text-align: center; */
   }
 }
