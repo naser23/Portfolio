@@ -3,8 +3,8 @@ import "../styles/landing.css";
 
 function Landing() {
   return (
-    <section className="landingPage">
-      <div className="landingPageContent">
+    <main className="landingPage">
+      <section className="landingPageContent">
         <h1 className="nameHeader">Naser Abdulkadir</h1>
         <h3 className="landingSubHeader">Software Developer</h3>
         <p className="landingParagraph">
@@ -17,8 +17,8 @@ function Landing() {
           thought I could learn from when I started until now.
         </p>
         <button className="projectsButton">Projects</button>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }
 
