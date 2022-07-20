@@ -7,22 +7,38 @@ function Projects() {
       <section className="projectsPageContent">
         <h1 className="header">Projects</h1>
         <div className="projectsArea">
-          <>
-            <img src="" alt="" />
-            <h3>Name</h3>
-          </>
-          <>
-            <img src="" alt="" />
-            <h3>Name</h3>
-          </>
-          <>
-            <img src="" alt="" />
-            <h3>Name</h3>
-          </>
-          <>
-            <img src="" alt="" />
-            <h3>Name</h3>
-          </>
+          <div className="project">
+            <img
+              className="projectImg"
+              src="https://www.abyssalchronicles.com/gallery/albums/userpics/10002/Muzet_school.jpg"
+              alt="muzet"
+            />
+            <p>Entertainment Web App</p>
+          </div>
+          <div className="project">
+            <img
+              className="projectImg"
+              src="https://www.abyssalchronicles.com/gallery/albums/userpics/10002/Muzet_school.jpg"
+              alt="muzet"
+            />
+            <p>Quiz App</p>
+          </div>
+          <div className="project">
+            <img
+              className="projectImg"
+              src="https://www.abyssalchronicles.com/gallery/albums/userpics/10002/Muzet_school.jpg"
+              alt="muzet"
+            />
+            <p>Space Tourism Website</p>
+          </div>
+          <div className="project">
+            <img
+              className="projectImg"
+              src="https://www.abyssalchronicles.com/gallery/albums/userpics/10002/Muzet_school.jpg"
+              alt="muzet"
+            />
+            <p>Name</p>
+          </div>
         </div>
       </section>
     </main>
