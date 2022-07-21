@@ -31,16 +31,22 @@
 .project {
   display: grid;
   grid-template-rows: 1.8fr 0.2fr;
+  gap: 10px;
+}
+
+.slideshow {
+  /* width: auto; */
+  display: flex;
+}
+
+.projectImg {
+  width: 100%;
+  height: 10rem;
 }
 
 .project p {
   text-align: center;
 }
-
-.projectImg {
-  width: 100%;
-}
-
 /* // small phone screens // */
 @media (width: 360px) {
   /* .projectsArea {
@@ -56,7 +62,14 @@
 }
 @media (min-width: 767.98px) {
   .projectsArea {
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: repeat(2, 55%);
+    place-items: center;
+    width: 70%;
+  }
+
+  .projectImg {
+    width: 100%;
+    height: 15rem;
   }
 }
 @media (min-width: 991.98px) {
@@ -65,7 +78,7 @@
   }
 
   .projectsArea {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1199.98px) {
