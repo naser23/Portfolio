@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Entertainment1 from "../Cropped screenshots for portfolio/entertainment-web-app-1.png";
 import Entertainment2 from "../Cropped screenshots for portfolio/entertainment-web-app-2.png";
 import Entertainment3 from "../Cropped screenshots for portfolio/entertainment-web-app-3.png";
@@ -16,11 +17,9 @@ function Projects() {
     Entertainment2,
     Entertainment3,
   ];
-
   const spaceScreenshots = [Space1, Space2, Space3];
-
   const quizScreenshots = [Quiz1, Quiz2, Quiz3];
-
+  const [currentSlide, setCurrentSlide] = useState(0);
   const projects = [
     {
       name: "Entertainment Web App",
@@ -50,6 +49,17 @@ function Projects() {
     },
   ];
 
+  function updateCurrentImage() {
+    if (currentSlide >= 0 || currentSlide <= 2) {
+      setCurrentSlide(currentSlide + 1);
+
+      console.log("within bounds");
+    } else console.log("out of bounds");
+  }
+
+  // updateCurrentImage();
+  // setInterval(updateCurrentImage, 1000);
+
   return (
     <main className="projectsPage">
       <section className="projectsPageContent">
@@ -60,17 +70,7 @@ function Projects() {
               <div className="slideshow">
                 <img
                   className="projectImg"
-                  src={project.pictures[0]}
-                  alt={project.name}
-                />
-                <img
-                  className="projectImg"
                   src={project.pictures[1]}
-                  alt={project.name}
-                />
-                <img
-                  className="projectImg"
-                  src={project.pictures[2]}
                   alt={project.name}
                 />
               </div>

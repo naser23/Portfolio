@@ -42,6 +42,7 @@
 .projectImg {
   width: 100%;
   height: 10rem;
+  border-radius: 10px;
 }
 
 .project p {
