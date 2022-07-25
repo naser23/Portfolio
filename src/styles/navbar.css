@@ -5,6 +5,7 @@
   align-items: center;
   background-color: #075a89;
   position: fixed;
+  z-index: 3;
 }
 
 .mobileNavOpen {

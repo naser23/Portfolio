@@ -70,11 +70,18 @@ function Projects() {
               <div className="slideshow">
                 <img
                   className="projectImg"
-                  src={project.pictures[1]}
+                  src={project.pictures[0]}
                   alt={project.name}
                 />
               </div>
-              <p>{project.name}</p>
+              <div className="projectOverlay">
+                <img
+                  className="overlayImg"
+                  src={project.pictures[0]}
+                  alt={project.name}
+                />
+                <button className="viewProject">View Project</button>
+              </div>
             </div>
           ))}
           {/* <div className="project">
