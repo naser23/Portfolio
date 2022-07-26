@@ -10,6 +10,7 @@ import Quiz1 from "../Cropped screenshots for portfolio/quiz-app-1.png";
 import Quiz2 from "../Cropped screenshots for portfolio/quiz-app-2.png";
 import Quiz3 from "../Cropped screenshots for portfolio/quiz-app-3.png";
 import "../styles/projects.css";
+import Modal from "../components/Modal";
 
 function Projects() {
   const entertainmentScreenshots = [
@@ -20,6 +21,7 @@ function Projects() {
   const spaceScreenshots = [Space1, Space2, Space3];
   const quizScreenshots = [Quiz1, Quiz2, Quiz3];
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
   const projects = [
     {
       name: "Entertainment Web App",
@@ -82,6 +84,8 @@ function Projects() {
                 />
                 <button className="viewProject">View Project</button>
               </div>
+
+              <Modal />
             </div>
           ))}
           {/* <div className="project">
