@@ -3,7 +3,7 @@
   height: 4rem;
   display: flex;
   align-items: center;
-  background-color: #075a89;
+  /* background-color: #075a89; */
   position: fixed;
   z-index: 3;
 }
@@ -102,7 +102,7 @@
 }
 @media (min-width: 1199.98px) {
   .navLinks {
-    width: 32.5%;
+    width: 30%;
   }
 }
 

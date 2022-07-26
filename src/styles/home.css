@@ -10,7 +10,8 @@
 
 @media (min-width: 767.98px) {
   .resumeButton {
-    border: 2px solid #212121;
+    border: 2px solid #0083b7;
+    color: #ffffff;
     font-size: 1.3rem;
     padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
@@ -19,8 +20,8 @@
 
   .resumeButton:hover {
     cursor: pointer;
-    background-color: #212121;
-    color: #ffffff;
+    background-color: #171717;
+    color: #0083b7;
     transition: all 0.1s ease-in-out;
   }
 }

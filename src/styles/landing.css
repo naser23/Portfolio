@@ -15,13 +15,14 @@
 .landingSubHeader {
   font-size: 1.5rem;
   padding-bottom: 1rem;
+  color: lightgray;
 }
 
 .projectsButton {
   font-size: 1.25rem;
   padding: 0.5rem 3rem;
   margin-top: 1rem;
-  background-color: #075a89;
+  background-color: #0083b7;
   border: none;
   color: white;
   border-radius: 10px;
@@ -52,22 +53,30 @@
 
   .landingParagraph {
     font-size: 1.25rem;
-    text-align: center;
+    /* text-align: center; */
   }
 }
 
 @media (min-width: 991.98px) {
   .landingPageContent {
+    width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
+  }
+
+  .projectsButton {
+    width: 10rem;
+    text-align: center;
+    padding: 0.5rem 0;
   }
 }
 
 @media (min-width: 1199.98px) {
   .landingParagraph {
-    padding: 0 25rem;
+    /* padding: 0 25rem; */
     /* text-align: center; */
+    width: 60%;
   }
 }
