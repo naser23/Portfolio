@@ -1,0 +1,50 @@
+.projectPage {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.mainImage {
+  width: 80%;
+  height: 50%;
+}
+
+.description {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  gap: 3rem;
+}
+
+.Repo,
+.liveSite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.Repo,
+.liveSite p {
+  font-size: 1.15rem;
+}
+
+.icon {
+  transform: scale(1.4);
+}
+
+@media (min-width: 567.98px) {
+}
+@media (min-width: 767.98px) {
+}
+@media (min-width: 991.98px) {
+}
+@media (min-width: 1199.98px) {
+}

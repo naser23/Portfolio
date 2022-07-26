@@ -79,4 +79,8 @@
     /* text-align: center; */
     width: 60%;
   }
+
+  .landingPageContent {
+    padding: 2rem 7rem;
+  }
 }

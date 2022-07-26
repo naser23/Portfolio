@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { useContext } from "react";
+import ProjectContext from "../ProjectContext";
 import Entertainment1 from "../Cropped screenshots for portfolio/entertainment-web-app-1.png";
 import Entertainment2 from "../Cropped screenshots for portfolio/entertainment-web-app-2.png";
 import Entertainment3 from "../Cropped screenshots for portfolio/entertainment-web-app-3.png";
@@ -10,7 +11,7 @@ import Quiz1 from "../Cropped screenshots for portfolio/quiz-app-1.png";
 import Quiz2 from "../Cropped screenshots for portfolio/quiz-app-2.png";
 import Quiz3 from "../Cropped screenshots for portfolio/quiz-app-3.png";
 import "../styles/projects.css";
-import Modal from "../components/Modal";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const entertainmentScreenshots = [
@@ -20,8 +21,10 @@ function Projects() {
   ];
   const spaceScreenshots = [Space1, Space2, Space3];
   const quizScreenshots = [Quiz1, Quiz2, Quiz3];
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
+
+  const { project, projectNamek, setProjectDetails } =
+    useContext(ProjectContext);
+  const navigate = useNavigate();
   const projects = [
     {
       name: "Entertainment Web App",
@@ -51,16 +54,15 @@ function Projects() {
     },
   ];
 
-  function updateCurrentImage() {
-    if (currentSlide >= 0 || currentSlide <= 2) {
-      setCurrentSlide(currentSlide + 1);
+  function showProjectInfo(project) {
+    setProjectDetails({
+      projectName: project.name,
+      project: project,
+    });
 
-      console.log("within bounds");
-    } else console.log("out of bounds");
+    navigate(`/${project.name}`);
+    console.log(project);
   }
-
-  // updateCurrentImage();
-  // setInterval(updateCurrentImage, 1000);
 
   return (
     <main className="projectsPage">
@@ -82,16 +84,15 @@ function Projects() {
                   src={project.pictures[0]}
                   alt={project.name}
                 />
-                <button className="viewProject">View Project</button>
+                <button
+                  className="viewProject"
+                  onClick={() => showProjectInfo(project)}
+                >
+                  View Project
+                </button>
               </div>
-
-              <Modal />
             </div>
           ))}
-          {/* <div className="project">
-            <img className="projectImg" src={Entertainment1} alt="muzet" />
-            <p>Entertainment Web App</p>
-          </div> */}
         </div>
       </section>
     </main>

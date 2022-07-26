@@ -37,7 +37,7 @@
 
 .slideshow {
   display: flex;
-  overflow: hidden;
+
   visibility: visible;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
@@ -47,18 +47,19 @@
 }
 
 .project:hover .projectOverlay {
-  display: flex;
+  visibility: visible;
 }
 
 .projectOverlay {
   height: 100%;
   position: absolute;
-  display: none;
+  display: flex;
   background-color: black;
   top: 0;
   left: 0;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
+  visibility: hidden;
 }
 
 .projectImg {
@@ -147,12 +148,11 @@
   .header {
     padding-bottom: 3rem;
   }
-
-  .projectsArea {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 @media (min-width: 1199.98px) {
+  /* .projectsArea {
+    grid-template-columns: repeat(2, 1fr);
+  } */
 }
 
 @media (min-width: 567.98px) and (max-width: 950.98px) and (orientation: landscape) {
