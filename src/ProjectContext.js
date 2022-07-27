@@ -1,18 +1,17 @@
-import { createContext, useState } from "react";
-
+import { createContext, useState, useEffect } from "react";
 const ProjectContext = createContext();
 
 export function ProjectProvider({ children }) {
   const [projectDetails, setProjectDetails] = useState({
-    projectName: "",
     project: "",
   });
 
-  const { project, projectName } = projectDetails;
+  const [sessionData, setSessionData] = useState();
+  const { project } = projectDetails;
 
   return (
     <ProjectContext.Provider
-      value={{ project, projectName, setProjectDetails }}
+      value={{ project, sessionData, setSessionData, setProjectDetails }}
     >
       {children}
     </ProjectContext.Provider>
