@@ -12,6 +12,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .mainImage {
@@ -29,17 +30,50 @@
   gap: 3rem;
 }
 
+.projectTitle {
+  font-size: 1.75rem;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.tool {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+
 .Repo,
 .liveSite {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.75rem;
+  border: 2px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  font-size: 1.15rem;
 }
 
-.Repo,
-.liveSite p {
-  font-size: 1.15rem;
+.Repo:hover,
+.liveSite:hover {
+  background-color: lightgray;
+  color: black;
+  cursor: pointer;
+}
+
+.Repo:visited,
+.liveSite:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .icon {
@@ -53,8 +87,20 @@
   }
 }
 @media (min-width: 767.98px) {
+  .description {
+    padding: 0 10%;
+  }
 }
 @media (min-width: 991.98px) {
+  .pageContent {
+    width: 60%;
+  }
+  .mainImage {
+    width: 80%;
+  }
 }
 @media (min-width: 1199.98px) {
+  .mainImage {
+    height: 25rem;
+  }
 }

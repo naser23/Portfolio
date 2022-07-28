@@ -38,7 +38,7 @@ export const projects = [
     name: "Guess to Sucess",
     description:
       "An Application that will let you build your own quiz with questions from many different subjects. You can be as specific or as loose as you want with the parameters of the quiz. This is a Perfect App for game night or just to even learn some new things that you didnt know before.",
-    technologies: ["HTML5", "CSS3", "Javascript", "Responsive"],
+    technologies: ["HTML5", "CSS3", "Javascript", "Responsive", "OpenTDB Api"],
     pictures: {
       one: require("./Cropped screenshots for portfolio/quiz-app-1.png"),
       two: require("./Cropped screenshots for portfolio/quiz-app-2.png"),

@@ -1,5 +1,6 @@
 import React from "react";
 import { useContext, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import ProjectContext from "../ProjectContext";
@@ -26,20 +27,26 @@ function ProjectPage() {
             src={project.pictures.one}
             alt={project.name}
           />
+          <div className="technologies">
+            {project.technologies.map((tool) => (
+              <p className="tool" key={project.technologies.indexOf(tool)}>
+                {tool}
+              </p>
+            ))}
+          </div>
           <p className="description">{project.description}</p>
           <section className="links">
-            <div className="technologies"></div>
-            <div className="liveSite">
+            <a href={project.siteLink} target="_new" className="liveSite">
               <FontAwesomeIcon
                 icon={faWindowMaximize}
                 className="icon"
               ></FontAwesomeIcon>
-              <p>Demo</p>
-            </div>
-            <div className="Repo">
+              Demo
+            </a>
+            <a href={project.Repo} target="_new" className="Repo">
               <FontAwesomeIcon icon={faCode} className="icon"></FontAwesomeIcon>
               <p>Code</p>
-            </div>
+            </a>
           </section>
         </div>
       </main>
