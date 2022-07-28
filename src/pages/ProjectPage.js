@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 import ProjectContext from "../ProjectContext";
 import "../styles/projectpage.css";
 
@@ -19,7 +20,12 @@ function ProjectPage() {
 
   return (
     project && (
-      <main className="projectPage">
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="projectPage"
+      >
         <div className="pageContent">
           <h1 className="projectTitle">{project.name}</h1>
           <img
@@ -49,7 +55,7 @@ function ProjectPage() {
             </a>
           </section>
         </div>
-      </main>
+      </motion.main>
     )
   );
 }

@@ -1,13 +1,12 @@
 import React from "react";
 import { useContext, useState } from "react";
 import ProjectContext from "../ProjectContext";
+import { motion } from "framer-motion";
 import { projects } from "../data";
 import "../styles/projects.css";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
-  console.log(projects);
-
   const { project, setProjectDetails } = useContext(ProjectContext);
   const navigate = useNavigate();
 
@@ -21,7 +20,12 @@ function Projects() {
   }
 
   return (
-    <main className="projectsPage">
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="projectsPage"
+    >
       <section className="projectsPageContent">
         <h1 className="header">Projects</h1>
         <div className="projectsArea">
@@ -51,7 +55,7 @@ function Projects() {
           ))}
         </div>
       </section>
-    </main>
+    </motion.main>
   );
 }
 

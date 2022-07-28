@@ -1,9 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 import "../styles/landing.css";
 
 function Landing() {
+  const navigate = useNavigate();
+
   return (
-    <main className="landingPage">
+    <motion.main
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="landingPage"
+    >
       <section className="landingPageContent">
         <h1 className="nameHeader">Naser Abdulkadir</h1>
         <h3 className="landingSubHeader">Software Developer</h3>
@@ -16,9 +25,14 @@ function Landing() {
           and I have built many more projects and learned much more than I
           thought I could learn from when I started until now.
         </p>
-        <button className="projectsButton">Projects</button>
+        <button
+          className="projectsButton"
+          onClick={() => navigate("/projects")}
+        >
+          Projects
+        </button>
       </section>
-    </main>
+    </motion.main>
   );
 }
 

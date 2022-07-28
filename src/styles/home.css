@@ -5,6 +5,7 @@
   color: white;
   position: relative;
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 /* // styling for resume button // */
