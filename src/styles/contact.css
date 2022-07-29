@@ -1,0 +1,88 @@
+.contactPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 0 1rem;
+  padding-top: 10rem;
+}
+
+.contactPageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHeader {
+  font-size: 3rem;
+}
+
+.contactParagraph {
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+.contactButton {
+  font-size: 1.15rem;
+  text-decoration: none;
+  border: 2px solid #0083b7;
+  border-radius: 5px;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  color: #0083b7;
+  transition: all 0.1s ease-in-out;
+}
+
+.contactButton:hover {
+  color: white;
+  background-color: #0083b7;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: none;
+}
+
+.socials {
+  display: flex;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.socialIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: 0.15s ease-in-out;
+}
+
+.socialIcon:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+@media (min-width: 567.98px) {
+  .contactPageContent {
+    margin: 0 20%;
+  }
+}
+@media (min-width: 767.98px) {
+  .contactPage {
+    padding-top: 0;
+    justify-content: center;
+  }
+
+  .contactPageContent {
+    margin: 0 25%;
+  }
+}
+@media (min-width: 991.98px) {
+}
+@media (min-width: 1199.98px) {
+  .contactPageContent {
+    margin: 0 35%;
+  }
+}

@@ -10,6 +10,8 @@ export const projects = [
       " React",
       "Firebase",
       "Responsive",
+      "TMDB API",
+      "framer-motion",
     ],
     pictures: {
       one: require("./Cropped screenshots for portfolio/entertainment-web-app-1.png"),
@@ -24,7 +26,14 @@ export const projects = [
     name: "Space Tourism Site",
     description:
       "A static Site showing off info about a space program regarding planets, astronauts, and info about technology required to make this program possible.",
-    technologies: ["HTML5", "CSS3", "Javascript", " React", "Responsive"],
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      " React",
+      "Responsive",
+      "framer-motion",
+    ],
     pictures: {
       one: require("./Cropped screenshots for portfolio/space-tourism-website-1.png"),
       two: require("./Cropped screenshots for portfolio/space-tourism-website-2.png"),
