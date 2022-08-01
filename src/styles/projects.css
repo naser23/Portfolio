@@ -109,22 +109,11 @@
   cursor: pointer;
 }
 
-/* .slideshow .viewProject {
-  display: none;
-}
-
-.slideshow:hover .viewProject {
-  display: block;
-} */
-
 .project p {
   text-align: center;
 }
 /* // small phone screens // */
 @media (width: 360px) {
-  /* .projectsArea {
-    grid-template-columns: repeat(2, 35%);
-  } */
 }
 
 @media (min-width: 567.98px) {

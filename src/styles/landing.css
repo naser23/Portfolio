@@ -10,7 +10,6 @@
 
 .nameHeader {
   font-size: 3rem;
-  /* line-height: 3.5rem; */
 }
 
 .landingSubHeader {
@@ -54,7 +53,6 @@
 
   .landingParagraph {
     font-size: 1.25rem;
-    /* text-align: center; */
   }
 }
 
@@ -63,7 +61,7 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
   }
 
@@ -76,8 +74,6 @@
 
 @media (min-width: 1199.98px) {
   .landingParagraph {
-    /* padding: 0 25rem; */
-    /* text-align: center; */
     width: 60%;
   }
 
