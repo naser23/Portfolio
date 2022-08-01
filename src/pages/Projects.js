@@ -1,5 +1,5 @@
 import React from "react";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import ProjectContext from "../ProjectContext";
 import { motion } from "framer-motion";
 import { projects } from "../data";
@@ -7,7 +7,7 @@ import "../styles/projects.css";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
-  const { project, setProjectDetails } = useContext(ProjectContext);
+  const { setProjectDetails } = useContext(ProjectContext);
   const navigate = useNavigate();
 
   function showProjectInfo(project) {
