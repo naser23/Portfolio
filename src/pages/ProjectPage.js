@@ -1,6 +1,5 @@
 import React from "react";
 import { useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
@@ -8,14 +7,15 @@ import ProjectContext from "../ProjectContext";
 import "../styles/projectpage.css";
 
 function ProjectPage() {
-  const { project, sessionData, setProjectDetails, setSessionData } =
-    useContext(ProjectContext);
+  const { project, setProjectDetails } = useContext(ProjectContext);
 
   useEffect(() => {
     const data = window.sessionStorage.getItem("project");
     setProjectDetails({
       project: JSON.parse(data),
     });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
