@@ -7,12 +7,11 @@
   background-color: #212121;
   border: 1px solid white;
   transition: all 0.3s ease-in-out;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .linkArea {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
   text-align: center;
@@ -24,8 +23,6 @@
   font-size: 1.5rem;
   color: white;
   text-decoration: none;
-  /* color: #075a89; */
-  /* color: #212121; */
 }
 
 .resumeButtonMobile {
@@ -45,8 +42,4 @@
   }
 }
 @media (min-width: 767.98px) {
-  /* .linkArea {
-    gap: 5rem;
-    padding-top: 10rem;
-  } */
 }
