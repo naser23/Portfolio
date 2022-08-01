@@ -46,17 +46,6 @@ function Navbar() {
           <Link className="link" to="/contact">
             Contact
           </Link>
-
-          {/* <NavLink to="/" className="link">
-            About
-          </NavLink>
-          <NavLink to="/projects" className="link">
-            Projects
-          </NavLink>
-          <NavLink to="/contact" className="link">
-            Contact
-          </NavLink> */}
-
           <ResumeButton />
         </div>
       </nav>

@@ -16,7 +16,14 @@ function MobileNav({ onClick }) {
         <Link to="/contact" className="mobileLink" onClick={onClick}>
           Contact
         </Link>
-        <button className="resumeButtonMobile">Resume</button>
+        <a
+          href="https://drive.google.com/file/d/19w_hjkloU8QgHb9fCbFOHA8arfkoOQkt/view?usp=sharing
+"
+          target="_new"
+          className="resumeButtonMobile"
+        >
+          Resume
+        </a>
       </div>
     </nav>
   );
